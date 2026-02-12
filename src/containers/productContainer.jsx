@@ -39,7 +39,6 @@ export default function ProductContainer() {
 
   return (
   <div className="row g-4">
-    {/* LEFT: FORM */}
     <div className="col-md-4">
       <ProductForm
         onSubmit={selectedProduct ? handleUpdate : handleAdd}
@@ -47,7 +46,6 @@ export default function ProductContainer() {
       />
     </div>
 
-    {/* RIGHT: TABLE */}
     <div className="col-md-8">
       <ProductList
         products={products}
